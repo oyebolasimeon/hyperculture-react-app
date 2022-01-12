@@ -1,38 +1,278 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* https://files.slack.com/files-pri/T014J4YEA9K-F02U7CQKG2U/image_from_ios.jpg */
+
+body{
+  background-color: #F9FEF9;
+  font-family: Times;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 90%;
+margin: auto;
+min-height: 7vh;
+align-items: center;
+  background-color: #F5FFF7;
+  /* background-color: black; */
+  margin-top: 2vh;
 }
 
-.App-link {
-  color: #61dafb;
+.banner{
+  display: flex;
+  width: 90%;
+margin: auto;
+min-height: 7vh;
+/* align-items: center; */
+  background-color: #F5FFF7;
+  /* background-color: black; */
+  margin-top: 6vh;
+  /* flex-direction: column; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-2{
+  display: block;
+  width: 90%;
+margin: auto;
+min-height: 7vh;
+/* align-items: center; */
+  background-color: #F5FFF7;
+  /* background-color: black; */
+  margin-top: 6vh;
+  /* flex-direction: column; */
+}
+
+.logo{
+  flex: 1;
+  text-transform:uppercase;
+  line-height: 2vh;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-family:sans-serif;
+}
+
+.logo-text-1{
+  color: #0A100B;
+}
+.logo-text-2{
+  color: #557666;
+}
+.nav{
+  flex: 1;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.nav li:hover{
+  cursor: pointer;
+  color: #2D5C47;
+}
+
+.reg{
+  /* flex: 1; */
+  /* background-color: #0A100B; */
+  margin-right: 10vh;
+  
+}
+.reg-text{
+  float: right;
+  /* background-color: #0A100B; */
+}
+
+.login-btn-1{
+  font-family: sans-serif;
+  font-size: 12px;
+  border: none;
+  background-color: transparent;
+}
+.login-btn-2{
+  font-family: sans-serif;
+  font-size: 12px;
+  padding: 12px 3vh;
+  background-color: #2D5C47;
+  border:  none;
+  border-radius: 5px 5px;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 1vh;
+}
+
+.content-box{
+  flex: 1;
+  margin-top: 10vh;
+}
+
+.banner-img{
+  flex: 1;
+}
+
+.content-box h1{
+  font-size: 60px;
+  font-family: sans-serif;
+  color: #363a36;
+  line-height: 12vh;
+  text-align: left;
+}
+.title-span{
+  color: #2D5C47;
+}
+
+.content-box h4{
+  margin-top: 5vh;
+  font-size: 27px;
+  text-align: left;
+  width: 75%;
+  font-weight: 300;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 5vh;
+}
+
+.shop-now-btn{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 16px 8vh;
+  background-color: #2D5C47;
+  border:  none;
+  border-radius: 5px 5px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 5vh;
+}
+
+.title-2{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #363a36;
+  line-height: 5vh;
+  text-align: left;
+  font-weight: 600;
+}
+
+.cards{
+  display: flex;
+  margin-bottom: 3vh;
+}
+
+.card{
+  flex: 1;
+  min-height: 5vh;
+  background-color: rgb(255, 255, 255);
+  width: 6vh;
+  padding: 8vh;
+  box-shadow: 7px 7px #f1f7f2;
+  
+  
+
+  
+}
+
+.card-1{
+  /* width: 8vh; */
+  float: left;
+  
+}
+
+.card-2{
+  /* width: 8vh; */
+  background-color:#2D5C47;
+  float: left;
+  margin-left: 20px;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  color: #fff;
+}
+
+
+.card-3{
+  /* width: 5vh; */
+  float: right;
+}
+
+.card-3 img{
+  width: 80%;
+  float: right;
+  margin-top: -18vh;
+  /* margin-left: 5vh; */
+}
+.card-title{
+  margin-top: 3vh;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.card-message{
+  margin-top: 3vh;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.icons{
+  font-size: 30px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #557666;
+}
+
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+  flex: 1;
+  padding: auto;
+  
+}
+
+
+
+
+
+
+/* Mobile Screens */
+
+@media screen and (max-width: 780px) {
+
+ .reg{
+     margin-right: 0;
+ }
+  .banner{
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card-2{
+      margin-left: 8px;
+      margin-right: 8px;
+  }
+
+  .card{
+      padding: 2vh;
+  }
+
+  .card-3 img{
+      display: none;
+  }
+  
+  
+  .nav{
+      display: none;
+  }
+
+  .banner-img img{
+      margin-top: 8vh;
+      width: 100%;
+  }
+  .banner-img img{
+      /* width: 90%; */
   }
 }
